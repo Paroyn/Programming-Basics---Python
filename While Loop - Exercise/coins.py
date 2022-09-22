@@ -1,0 +1,29 @@
+sums = float(input())
+sum = round(sums * 100)
+tokens = 0
+while sum > 0:
+    if sum >= 200:
+        sum -= 200
+        tokens += 1
+    elif sum < 200 and sum >=100:
+        sum -= 100
+        tokens += 1
+    elif sum < 100 and sum >=50:
+        sum -= 50
+        tokens += 1
+    elif sum < 50 and sum >=20:
+        sum -= 20
+        tokens += 1
+    elif sum < 20 and sum >=10:
+        sum -= 10
+        tokens += 1
+    elif sum < 10 and sum >=5:
+        sum -= 5
+        tokens += 1
+    elif sum < 5 and sum >=2:
+        sum -= 2
+        tokens += 1
+    elif sum < 2 and sum >=1:
+        sum -= 1
+        tokens += 1
+print(tokens)
